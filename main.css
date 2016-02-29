@@ -1,0 +1,257 @@
+.game-field {
+    border: solid black 1px;
+    /*width: 300px;*/
+    /*height: 300px;*/
+}
+
+/*game table*/
+#game-table {
+    /*float: left;*/
+    cursor: pointer;
+    clear: left;
+    border: solid #BDBDBD 5px;
+
+}
+
+#game-table tr {
+    height: 15px;
+}
+
+#game-table td {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-image: url('sprite.png');
+    padding: 0px;
+
+}
+
+#game-table td.default {
+    background-position: 0 -39px;
+}
+
+#game-table td.open, #game-table td.close:active  {
+    background-position: 0 -23px;
+}
+
+#game-table td.open-1 {
+    background-position: -16px -23px;
+}
+
+#game-table td.open-2 {
+    background-position: -32px -23px;
+}
+
+#game-table td.open-3 {
+    background-position: -48px -23px;
+}
+
+#game-table td.open-4 {
+    background-position: -64px -23px;
+}
+
+#game-table td.open-5 {
+    background-position: -80px -23px;
+}
+
+#game-table td.open-6 {
+    background-position: -96px -23px;
+}
+
+#game-table td.open-7 {
+    background-position: -112px -23px;
+}
+
+#game-table td.open-8 {
+    background-position: -128px -23px;
+}
+
+#game-table td.bomb {
+    background-position: -64px -39px;
+    cursor: default;
+}
+
+#game-table td.bomb.open {
+    background-position: -32px -39px;
+    cursor: default;
+}
+
+#game-table td.flag {
+    background-position: -16px -39px;
+}
+#game-table td.wrong-flag {
+    background-position: -48px -39px;
+}
+
+#game-table td.question {
+    background-position: -80px -39px;
+}
+
+
+/*end game table*/
+
+/*game header*/
+.game-header {
+    height: 30px;
+    background-color: #BDBDBD;
+    border: solid #BDBDBD 5px;
+}
+
+.game-timer, .game-bombs{
+    margin: 4px;
+}
+
+.timers {
+    float: left;
+}
+
+#smile_button {
+    float: left;
+}
+
+.game-bombs {
+    margin-left: 84%;
+}
+
+/*end game*/
+
+/*timer*/
+.timers {
+    background-image: url("sprite.png");
+    width: 13px;
+    height: 23px;
+    /*float: left;*/
+}
+
+[data-number="1"] {
+    background-position: -13px 0px;
+}
+
+[data-number="2"] {
+    background-position: -26px 0px;
+}
+
+[data-number="3"] {
+    background-position: -39px 0px;
+}
+
+[data-number="4"] {
+    background-position: -52px 0px;
+}
+
+[data-number="5"] {
+    background-position: -65px 0px;
+}
+
+[data-number="6"] {
+    background-position: -78px 0px;
+}
+
+[data-number="7"] {
+    background-position: -91px 0px;
+}
+
+[data-number="8"] {
+    background-position: -104px 0px;
+}
+
+[data-number="9"] {
+    background-position: -117px 0px;
+}
+
+/*end timer */
+
+/*bomb timer */
+
+.game-bombs div {
+    background-image: url("sprite.png");
+    width: 13px;
+    height: 23px;
+    float: left;
+}
+
+/*end bomb timer*/
+
+/*modal setting*/
+
+.modal {
+    display: none;
+    background: #EEE;
+    border: solid black 2px;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    width: 270px;
+    height: 177px;
+}
+
+.header {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.header:nth-child(1) {
+    width: 200px;
+}
+
+.game-setting {
+    width: 265px;
+    height: 150px;
+}
+
+.game-setting > div {
+    height: 100%;
+}
+
+.game-setting > div > div {
+    padding: 10px 0 0 0;
+}
+
+.game-setting input[type="text"] {
+    width: 30px;
+}
+
+.game-setting .names {
+    margin: 17px 0 0 0px;
+    width: 75px;
+    float: left;
+}
+
+.col-height {
+    width: 60px;
+    float: left;
+    margin-left: 10px;
+}
+
+.col-width {
+    width: 60px;
+    float: left;
+}
+
+#apply_settings {
+    float: right;
+}
+
+/*end modal setting*/
+
+#smile_button {
+    background-image: url("sprite.png");
+    background-position: 0px 26px;
+    width: 27px;
+    height: 27px;
+    /*float: left;*/
+    /*margin-left: 21%;*/
+}
+
+#smile_button:focus {
+    background-position: -26px 26px;
+}
+#smile_button.hover {
+    background-position: -52px 26px;
+}
+#smile_button.fail {
+    background-position: -78px 26px;
+}
+#smile_button.win {
+    background-position: -104px 26px;
+}
